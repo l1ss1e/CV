@@ -1,0 +1,12 @@
+me=imread('C:\Users\Liza\Desktop\me.jpg');
+you=imread('C:\Users\Liza\Desktop\you.jpg');
+disp(size(me));
+disp(size(you));
+crme=me(290:1145, 150:717);
+imshow(crme);
+disp(size(crme));
+cryou=you(20:875, 208:775);
+imshow(cryou);
+disp(size(cryou));
+youme=cryou/2+crme/2;
+imshow(youme);
